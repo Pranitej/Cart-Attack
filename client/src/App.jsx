@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import Home from "./pages/HomeTemp";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
@@ -13,10 +13,6 @@ const UserContext = createContext();
 
 function App() {
   const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    console.log(user);
-  }, [user]);
 
   return (
     <UserContext.Provider value={{ user, setUser }}>

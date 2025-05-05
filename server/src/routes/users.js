@@ -38,7 +38,6 @@ router.get("/:id", async (req, res) => {
 // @access  Protected (optional)
 router.put("/:id", async (req, res) => {
   const { name, email, password } = req.body;
-  console.log("Hello");
   try {
     const user = await User.findById(req.params.id);
     if (!user) return res.status(404).json({ message: "User not found" });

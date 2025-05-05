@@ -184,7 +184,6 @@ export default function Cart() {
                       disabled={updating}
                       onClick={() => {
                         handleQuantity(item, -1);
-                        console.log(item);
                       }}
                     >
                       -
