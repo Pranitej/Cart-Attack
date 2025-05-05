@@ -221,7 +221,7 @@ const AdminDashboard = () => {
                 </button>
 
                 {userDropdownOpen && (
-                  <div className="absolute right-0 cursor-pointer mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-20">
+                  <div className="absolute border-indigo-500 border-2 right-0 cursor-pointer mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-20">
                     <span
                       onClick={() => {
                         setUser(null);
